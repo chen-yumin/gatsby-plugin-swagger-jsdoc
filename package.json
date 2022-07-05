@@ -1,7 +1,7 @@
 {
   "name": "gatsby-plugin-swagger-jsdoc",
   "description": "A Gatsby plugin to automatically generate Swagger OpenAPI spec from JSDoc-style comments",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Yumin Chen <yumin@chen.so>",
   "bugs": {
     "url": "https://github.com/chen-yumin/gatsby-plugin-swagger-jsdoc/issues"
