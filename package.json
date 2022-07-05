@@ -1,0 +1,51 @@
+{
+  "name": "gatsby-plugin-swagger-jsdoc",
+  "description": "A Gatsby plugin to automatically generate Swagger OpenAPI spec from JSDoc-style comments",
+  "version": "0.0.6",
+  "author": "Yumin Chen <yumin@chen.so>",
+  "bugs": {
+    "url": "https://github.com/chen-yumin/gatsby-plugin-swagger-jsdoc/issues"
+  },
+  "dependencies": {
+    "@babel/runtime": "latest",
+    "swagger-jsdoc": "latest",
+    "swagger-ui-react": "latest"
+  },
+  "devDependencies": {
+    "@babel/cli": "latest",
+    "@babel/core": "latest",
+    "babel-preset-gatsby-package": "latest",
+    "cross-env": "latest",
+    "prettier": "latest"
+  },
+  "homepage": "https://github.com/chen-yumin/gatsby-plugin-swagger-jsdoc#readme",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "swagger",
+    "swagger-jsdoc",
+    "swagger-ui"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "peerDependencies": {
+    "gatsby": "latest",
+    "openapi-types": "latest",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chen-yumin/gatsby-plugin-swagger-jsdoc.git",
+    "directory": "packages/gatsby-plugin-swagger-jsdoc"
+  },
+  "scripts": {
+    "build": "babel src --out-dir . --ignore \"**/__tests__\"",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,css}\"",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore \"**/__tests__\""
+  },
+  "engines": {
+    "node": ">=14.15.0"
+  }
+}
